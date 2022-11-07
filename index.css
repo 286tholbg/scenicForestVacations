@@ -215,3 +215,120 @@ p.test-auth {
     width: 80%;
     opacity: .1;
 }
+
+@media (min-width: 550px) {
+    .menu, .exit {
+        display: none;
+    }
+    header {
+        padding: 1em;
+    }
+    ul.nav {
+        visibility: unset;
+        opacity: 1;
+        background: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: unset;
+        height: auto;
+    }
+    ul.nav li a {
+        font-size: .9em;
+        padding: 0 1em;
+        font-weight: normal;
+    }
+    ul.nav li:last-child a {
+        padding-right: 0;
+    }
+    ul.nav .active a {
+        font-weight: bold;
+    }
+    ul.nav .res a {
+        color: #72A84A;
+        font-weight: bold;
+    }
+    ul.featured-cabins {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 3em;
+    }
+}
+
+@media (min-width: 650px){
+    ul.features {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 3em;
+    }
+}
+
+@media (min-width: 900px){
+    .wrapper {
+        text-align: left;
+    }
+    .flex {
+        display: flex;
+    }
+    .hero {
+        padding: 8em 4em;
+    }
+    .last-container {
+        padding: 0 4em;
+    }
+    .main-copy {
+        width: 40%;
+    }
+    p.subtitle {
+        margin: 0 0 1em;
+        padding: 0;
+    }
+    h1 {
+        font-size: 3em;
+        margin-top: 0;
+    }
+    ul.featured-cabins {
+        width: 70%;
+    }
+    .main-quote, .main-cite {
+        text-align: center;
+    }
+    .main-quote {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+    .main-cite {
+        font-size: 1.5em;
+        margin-bottom: 3em;
+    }
+
+    .bio {
+        width: 90%;
+    }
+    ul.testimonials {
+        margin-left: 2em;
+        width: 100%;
+    }
+    ul.testimonials li {
+        display: flex;
+        background: white;
+        padding: 1.5em;
+        margin-bottom: 1em;
+    }
+    .test-img {
+        margin-right: 1em;
+    }
+    .test-desc {
+        margin-top: .5em;
+        font-size: 1.1em;
+        margin-bottom: 0;
+    }
+    .fern {
+        width: 20%;
+    }
+    .cabin-desc, ul.features li p, .left p {
+        font-size: .9em;
+    }
+}
